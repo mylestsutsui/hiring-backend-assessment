@@ -1,22 +1,68 @@
 import {
-    BaseEntity, Column, CreateDateColumn, DeleteDateColumn, Entity, PrimaryGeneratedColumn,
-    UpdateDateColumn
+  BaseEntity, Column, Entity,
+  PrimaryGeneratedColumn
 } from "typeorm";
 
-@Entity("TableNameForExampleEntity")
-export class ExampleEntity extends BaseEntity {
+// @Entity("TableNameForExampleEntity")
+// export class ExampleEntity extends BaseEntity {
+//   @PrimaryGeneratedColumn("uuid")
+//     id: string;
+
+//   @Column()
+//     exampleColumn: string;
+
+//   @CreateDateColumn()
+//     createdDate: Date;
+
+//   @UpdateDateColumn()
+//     updatedDate: Date;
+
+//   @DeleteDateColumn()
+//     deletedDate: Date;
+// }
+
+@Entity()
+export class Cars extends BaseEntity {
   @PrimaryGeneratedColumn("uuid")
-  id: string;
+    id: string;
 
   @Column()
-  exampleColumn: string;
+    vin: string;
 
-  @CreateDateColumn()
-  createdDate: Date;
+  @Column()
+    make: string;
 
-  @UpdateDateColumn()
-  updatedDate: Date;
+  @Column()
+    model: string;
 
-  @DeleteDateColumn()
-  deletedDate: Date;
+  @Column()
+    year: number;
+
+  @Column()
+    licensePlateNum: string;
+
+  @Column()
+    registrationNum: string;
+
+  @Column()
+    registrationState: string;
+
+  @Column()
+    registrationExp: string;
+
+  @Column()
+    registrationName: string;
+
+  @Column()
+    carValue: number;
+
+  @Column()
+    currentMileage: number;
+
+  @Column()
+    description: string;
+
+  @Column()
+    color: string;
 }
+
