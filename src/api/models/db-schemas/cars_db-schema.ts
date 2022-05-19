@@ -3,24 +3,6 @@ import {
   PrimaryGeneratedColumn
 } from "typeorm";
 
-// @Entity("TableNameForExampleEntity")
-// export class ExampleEntity extends BaseEntity {
-//   @PrimaryGeneratedColumn("uuid")
-//     id: string;
-
-//   @Column()
-//     exampleColumn: string;
-
-//   @CreateDateColumn()
-//     createdDate: Date;
-
-//   @UpdateDateColumn()
-//     updatedDate: Date;
-
-//   @DeleteDateColumn()
-//     deletedDate: Date;
-// }
-
 @Entity()
 export class Cars extends BaseEntity {
   @PrimaryGeneratedColumn("uuid")
